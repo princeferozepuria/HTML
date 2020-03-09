@@ -1,0 +1,78 @@
+HTML Global Attributes
+The global attributes below can be used on any HTML element.
+
+<a href="https://www.w3schools.com/css3" accesskey="c">CSS3</a> <!--Alt + C-->
+
+<span class="left important">
+
+<p contenteditable="true">This is an editable paragraph.</p><!--true or false-->
+
+<li data-animal-type="spider">Tarantula</li>
+
+<p dir="rtl">Write this text right-to-left!</p><!--ltr or rtl or auto-->
+
+<p draggable="true">This is a draggable paragraph.</p><!--true or false or auto-->
+
+<p hidden="hidden">This paragraph should be hidden.</p>
+
+<a id="top">Some heading</a>
+
+<p lang="fr">Ceci est un paragraphe.</p>
+
+<p  spellcheck="true">its spelling and grammar checked or not.</p>
+
+<p style="color:green">This is a paragraph.</p>
+
+<a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
+<a href="http://www.google.com/" tabindex="1">Google</a>
+<a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+
+<p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.A tooltip text for an element</p>
+
+.........................................................................
+Attribute	Description
+accesskey	  Specifies a shortcut key to activate/focus an element
+class	Specifies one or more classnames for an element (refers to a class in a style sheet)
+contenteditable	Specifies whether the content of an element is editable or not
+data-*	Used to store custom data private to the page or application
+dir	Specifies the text direction for the content in an element
+draggable	Specifies whether an element is draggable or not
+hidden	Specifies that an element is not yet, or is no longer, relevant
+id	Specifies a unique id for an element
+lang	Specifies the language of the element's content
+spellcheck	Specifies whether the element is to have its spelling and grammar checked or not
+style	Specifies an inline CSS style for an element
+tabindex	Specifies the tabbing order of an element
+title	Specifies extra information about an element
+translate	Specifies whether the content of an element should be translated or not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

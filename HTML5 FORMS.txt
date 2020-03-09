@@ -1,0 +1,340 @@
+The <form> Element defines a form that is used to collect user input.
+<form>
+form elements etc,,,,
+</form>
+
+Attribute           	Value	                     Description
+
+accept-charset	character_set    Specifies the character encodings that are to be used for the form submission
+action	URL	                             Specifies where to send the form-data when a form is submitted
+autocomplete	onoff                     Specifies whether a form should have autocomplete on or off
+enctype	application/x-www-form-urlencoded
+multipart/form-data
+text/plain	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method	getpost	              Specifies the HTTP method to use when sending form-data
+name	text	              Specifies the name of a form
+novalidate novalidate   Specifies that the form should not be validated when submitted
+target	_blank
+_self
+_parent
+_top	         Specifies where to display the response that is received after submitting the for
+____________________________________________________________
+FORM ATTRIBUTES:-
+<form action="/action_page.php" accept-charset="ISO-8859-1">
+
+<form action="/action_page.php">
+in another words:-Where to send the form-data when the form is submitted.
+An absolute URL - points to another web site (like action="http://www.example.com/example.htm")
+A relative URL - points to a file within a web site (like action="example.htm")
+<form action="/action_page.php" autocomplete="on">
+
+<form action="/action_page_binary.asp" enctype="multipart/form-data">
+Definition and Usage
+The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
+Note: The enctype attribute can be used only if method="post".
+Value	                                                            Description
+application/x-www-form-urlencoded	  Default. All characters are encoded before sent (spaces are converted to "+"                                                                                symbols, and special characters are converted to ASCII HEX values)
+multipart/form-data	                    No characters are encoded. This value is required when you are using forms                                                                           that have a file upload control
+text/plain	                                                      Spaces are converted to "+" symbols, but no special characters are encoded
+
+
+get	Default. Appends the form-data to the URL in name/value pairs: URL?name=value&name=value
+<form action="/action_page.php" method="get">
+
+post	Sends the form-data as an HTTP post transaction
+ <form action="/action_page.php" method="post">
+
+The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+in head section java script can use this name:
+<form action="/action_page.php" method="get" name="myForm">
+
+<form action="/action_page.php" novalidate>
+
+<form action="/action_page.php" method="get" target="_blank">
+_________________________________________________
+HTML Form Elements:-
+Tag	        Description
+<form>	      Defines an HTML form for user input
+<input>	      Defines an input control
+<textarea>     Defines a multiline input control (text area)
+<label>	      Defines a label for an <input> element
+<fieldset>      Groups related elements in a form
+<legend>	      Defines a caption for a <fieldset> element
+<select>	      Defines a drop-down list
+<optgroup>   Defines a group of related options in a drop-down list
+<option>	      Defines an option in a drop-down list
+<button>	      Defines a clickable button
+<datalist>      Specifies a list of pre-defined options for input controls
+<output>	      Defines the result of a calculation
+_________________________________________________________
+HTML <textarea>              </textarea>
+Definition and Usage
+The <textarea> tag defines a multi-line text input control.
+A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+<textarea rows="4" cols="50">  
+
+Attribute	                 Value	                                                       Description
+autofocus	autofocus	Specifies that a text area should automatically get focus when the page loads
+cols	                number	                              Specifies the visible width of a text area
+dirname         	textareaname.dir                 	Specifies that the text direction of the textarea will be submitted
+disabled	                disabled	                        Specifies that a text area should be disabled
+form	              form_id	                         Specifies one or more forms the text area belongs to
+maxlength                  10	                           Specifies the maximum number of characters allowed in the text area
+name	                  text	                             Specifies a name for a text area
+placeholder	text	          Specifies a short hint that describes the expected value of a text area
+readonly	         readonly	                                  Specifies that a text area should be read-only
+required	          required	                               Specifies that a text area is required/must be filled out
+rows	           number                 	       Specifies the visible number of lines in a text area
+wrap	         hard/soft	              Specifies how the text in a text area is to be wrapped when submitted in a form
+__________________________________________________________
+HTML <label> Tag
+The <label> tag defines a label for a <button>, <input>, <meter>, <output>, <progress>, <select>, or <textarea> element.
+Tip: A label can be bound to an element either by using the "for" attribute, or by placing the element inside the <label> element.
+
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male" value="male"><br>
+
+<label for="male" form="form1">Male</label> outside form label
+_____________________________________________
+HTML <fieldset> Tag
+Tip: The <legend> tag defines a caption for the <fieldset> element.
+
+<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text"><br>
+    Email: <input type="text"><br>
+    Date of birth: <input type="text">
+  </fieldset>
+</form>
+
+Attribute	Value	Description
+disabled	disabled	Specifies that a group of related form elements should be disabled
+form	form_id	Specifies one or more forms the fieldset belongs to
+name	text	Specifies a name for the fieldset
+_________________________
+HTML <select> Tag
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+Attribute	       Value	              Description
+autofocua   autofocus       Specifies that the drop-down list should automatically get focus when the page loads
+disabled	  disabled	       Specifies that a drop-down list should be disabled
+form	  form_id	         Defines one or more forms the select field belongs to
+multiple	  multiple               Specifies that multiple options can be selected at once
+name	  name	            Defines a name for the drop-down list
+required	  required	                Specifies that the user is required to select a value before submitting the form
+size	  5                          	Defines the number of visible options in a drop-down list
+__________________________________________________
+HTML <optgroup> Tag
+
+<select>
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+Attribute	Value	Description
+disabled	disabled	Specifies that an option-group should be disabled
+label	text	Specifies a label for an option-group
+__________________________________________________
+HTML <option> Tag
+
+<select name="cars">
+  <option value="volvo">Volvo XC90</option>
+  <option value="saab">Saab 95</option>
+  <option value="mercedes">Mercedes SLK</option>
+  <option value="audi">Audi TT</option>
+</select>
+
+
+disabled	disabled	Specifies that an option should be disabled
+label	text	Specifies a shorter label for an option
+selected	selected	Specifies that an option should be pre-selected when the page loads
+value	text	Specifies the value to be sent to a server
+
+Note: The <option> tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server.
+Tip: If you have a long list of options, you can group related options with the <optgroup> tag.
+_________________________________________________
+HTML <button> Tag
+Note: If you use the <button> element in an HTML form, different browsers may submit different values. 
+Use <input> to create buttons in an HTML form.
+
+Value	Description
+button	The button is a clickable button
+submit	The button is a submit button (submits form-data)
+reset	The button is a reset button (resets the form-data to its initial values)
+
+<button name="subject" type="submit" value="fav_CSS">CSS</button>
+
+Attribute   	Value	                          Description
+autofocus	autofocus	Specifies that a button should automatically get focus when the page loads
+disabled	                disabled	                              Specifies that a button should be disabled
+form	                   form_id	                           Specifies one or more forms the button belongs to
+formaction	   URL	   Specifies where to send the form-data when a form is submitted. Only for type="submit"
+formenctype	                         application/x-www-form-urlencoded
+multipart/form-data
+text/plain        	        Specifies how form-data should be encoded before sending it to a server. Only for type="submit"
+formmethod	  get/post	  Specifies how to send the form-data (which HTTP method to use). Only fortype="submit"
+formnovalidate	formnovalidaate Specifies that the form-data should not be validated on submission. for type submit
+
+formtarget	_blank
+_self
+_parent
+_top
+framename	Specifies where to display the response after submitting the form. Only for type="submit"
+
+name	    name	Specifies a name for the button
+type	   button/reset/submit     Specifies the type of button
+value	text	Specifies an initial value for the button
+______________________________________________
+HTML <datalist> Tag
+
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+_______________________________________
+The <output> tag represents the result of a calculation (like one performed by a script)
+HTML <output> Tag
+<body>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+</body>
+
+Attribute	     Value	                   Description
+for	element_id	Specifies the relationship between the result of the calculation, and the elements used in                                                           the calculation
+form	form_id               	Specifies one or more forms the output element belongs to
+name	name	                Specifies a name for the output element
+_______________________________________________________
+HTML Input Types
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+__________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

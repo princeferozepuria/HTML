@@ -1,0 +1,36 @@
+Be Smart and Future Proof
+Using a well-formed-"close to XHTML" syntax can be smart.
+Always keep your code tidy, clean and well-formed.
+Developers normally use lowercase names (as in XHTML)
+Use Lower Case Element Names
+Use Lower Case Attribute Names
+Lowercase look cleaner
+Lowercase are easier to write
+Close All HTML Elements
+Close Empty HTML Elements
+The closing slash (/) is REQUIRED in XHTML and XML.
+Developers normally quote attribute values (as in XHTML)
+Always add the alt attribute to images
+Space-less is easier to read and groups entities better together.
+Avoid Long Code Lines
+For readability, add two spaces of indentation. Do not use the tab key.
+For readability, add blank lines to separate large or logical code blocks.
+Declaring a language is important for accessibility applications (screen readers) and search engines.
+Make the title as meaningful as possible:
+Setting The Viewport
+Short comments should be written on one line,
+Use Lower Case File Names like:code.jpg
+HTML files should have a .html or .htm extension.
+CSS files should have a .css extension.
+JavaScript files should have a .js extension.
+
+
+
+
+
+
+
+
+
+
+

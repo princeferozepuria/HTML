@@ -1,0 +1,87 @@
+
+HTML Uniform Resource Locators
+Web browsers request pages from web servers by using a URL.
+A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+URL encoding converts characters into a format that can be transmitted over the Internet.
+URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.
+URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign or with %20.
+
+scheme://prefix.domain:port/path/filename
+Explanation:https://www.w3schools.com/html/default.asp 
+
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+Common URL Schemes
+The table below lists some common schemes:
+Scheme	Short for	Used for
+http	HyperText Transfer Protocol	Common web pages. Not encrypted
+https	Secure HyperText Transfer Protocol	Secure web pages. Encrypted
+ftp	File Transfer Protocol	Downloading or uploading files
+file	A file on your computer
+
+_______________________________________
+XHTML is HTML written as XML.
+
+XHTML stands for EXtensible HyperText Markup Language
+XHTML is almost identical to HTML
+XHTML is stricter than HTML
+XHTML is HTML defined as an XML application
+XHTML is supported by all major browsers
+
+The Most Important Differences from HTML:Document Structure
+XHTML DOCTYPE is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+
+XHTML Elements
+XHTML elements must be properly nested
+XHTML elements must always be closed
+XHTML elements must be in lowercase
+XHTML documents must have one root element:eg.html,
+
+XHTML Attributes
+Attribute names must be in lower case
+Attribute values must be quoted
+Attribute minimization is forbidden
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!--root element-->
+
+Attribute Minimization Is Forbidden:-this is correct 
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+
+How to Convert from HTML to XHTML
+Add an XHTML <!DOCTYPE> to the first line of every page
+Add an xmlns attribute to the html element of every page
+Change all element names to lowercase
+Close all empty elements
+Change all attribute names to lowercase
+Quote all attribute values
+
+Validate HTML With The W3C Validator
+Put your web address in the box below:
+https://www.w3schools.com/html/html_validate.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

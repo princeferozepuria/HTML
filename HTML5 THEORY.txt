@@ -1,0 +1,1028 @@
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html en="us"> element is the root element of an HTML page
+The <head> element contains meta information about the document
+The <title> element specifies a title for the document
+The <body> element contains the visible page content
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+---------------------------------------------------
+The HTML <head> Element
+The following tags describe metadata: <title>, <style>, <meta>, <link>, <script>, and <base>.
+<head>
+<title>Page Title</title>
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+...............................
+The <link> element is used to link to external style sheets
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="theme.css">
+<link href="tag_link.asp" rel="parent" rev="subsection" hreflang="en">
+<link rel="stylesheet" type="text/css" href="print.css" media="print">
+
+
+Value	Description media="all" 
+all	Default. Used for all media type devices
+print	Used for Print preview mode/printed pages
+screen	Used for computer screens, tablets, smart-phones etc.
+speech	Used for screenreaders that "reads" the page out loud
+
+
+<link rel="value">
+Attribute Values
+Value	Description
+alternate	 Provides a link to an alternate version of the document (i.e. print page, translated or mirror).
+Example: <link rel="alternate" type="application/atom+xml" title="W3Schools News" href="/blog/news/atom">
+
+author=Provides a link to the author of the document
+
+dns-prefetch =Specifies that the browser should preemptively perform DNS resolution for the target resource's origin
+
+help=Provides a link to a help document. Example: <link rel="help" href="/help/">
+
+icon=Imports an icon to represent the document.
+Example: <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+license=Provides a link to copyright information for the document
+
+next=Provides a link to the next document in the series
+
+pingback=Provides the address of the pingback server that handles pingbacks to the current document
+
+preconnect=Specifies that the browser should preemptively connect to the target resource's origin.
+
+prefetch=Specifies that the browser should preemptively fetch and cache the target resource as it is likely to be required for a follow-up navigation
+
+preload=Specifies that the browser agent must preemptively fetch and cache the target resource for current navigation according to the destination given by the "as" attribute (and the priority associated with that destination).
+
+prerender=Specifies that the browser should pre-render (load) the specified webpage in the background. So, if the user navigates to this page, it speeds up the page load (because the page is already loaded). Warning! This waste the user's bandwidth! Only use prerender if it is absolutely sure that the webpage is required at some point in the user journey
+
+prev=Indicates that the document is a part of a series, and that the previous document in the series is the referenced document
+
+search=Provides a link to a resource that can be used to search through the current document and its related pages.
+stylesheet=Imports a style sheet
+.......................................................................................
+The HTML <meta> Element
+The <meta> element is used to specify which character set is used, page description, keywords, author, and other metadata.
+Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.
+<meta charset="UTF-8">
+Define a description of your web page:
+<meta name="description" content="Free Web tutorials">
+
+Define keywords for search engines:
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+
+Define the author of a page:
+<meta name="author" content="John Doe">
+
+Refresh document every 30 seconds:
+<meta http-equiv="refresh" content="30">
+Example of <meta> tags:
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+...........................................................................................
+The HTML <base> Element
+The <base> element specifies the base URL and base target for all relative URLs in a page:
+ <base target="_blank"> define in head section
+<body>
+<p><a href="https://www.w3schools.com">W3Schools</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+</head>
+Value	Description
+_blank	Opens the link in a new window or tab
+_self	Default. Opens the link in the same frame as it was clicked
+_parent	Opens the link in the parent frame
+_top	Opens the link in the full body of the window
+framename	Opens the link in a named frame
+.......................................................
+HTML JavaScript <Script> tag
+JavaScript makes HTML pages more dynamic and interactive.
+
+<h1>My First JavaScript</h1>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+The HTML <script> Tag
+The <script> tag is used to define a client-side script (JavaScript).
+The <script> element either contains scripting statements, or it points to an external script file through the src attribute.
+
+A script that will be run asynchronously as soon as it is available:
+<script src="demo_async.js" async></script>
+
+A script that will not run until after the page has loaded:
+<script src="demo_defer.js" defer></script>
+
+An external JavaScript with an UTF-8 character set:
+<script src="myscripts.js" charset="UTF-8"></script>
+
+<script type="application/javascript">
+
+The HTML <noscript> Tag
+The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts:
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+.........................................................
+Tag	Description
+<head>	Defines information about the document
+<title>	Defines the title of a document
+<base>	Defines a default address or a default target for all links on a page
+<link>	Defines the relationship between a document and an external resource
+<meta>	Defines metadata about an HTML document
+<script>	Defines a client-side script
+<style>	Defines style information for a document
+______________________________________________
+
+HTML tags normally come in pairs like <p> and </p>
+The first tag in a pair is the start tag, the second tag is the end tag
+The end tag is written like the start tag, but with a forward slash inserted before the tag name
+_____________________________________
+HTML headings are defined with the <h1> to <h6> tags
+<h1>This is heading 1</h1>
+
+HTML paragraphs are defined with the <p> tag
+<p>This is a paragraph.</p>
+
+HTML links are defined with the <a> tag:
+<a href="https://www.w3schools.com">This is a link</a>
+
+HTML images are defined with the <img> tag.
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+HTML buttons are defined with the <button> tag:
+<button>Click me</button>
+
+HTML lists are defined with the <ul> (unordered/bullet list) or the <ol> (ordered/numbered list) tag, followed by <li> tags (list items):
+<ul>
+  <li>Coffee</li>
+</ul>
+
+An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+Start tag	Element content	End tag
+<p>           prince                     </p>
+
+Do Not Forget the End Tag
+Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.
+Empty elements can be "closed" in the opening tag like this: <br /> and <hr />
+HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly.
+_____________________________________________________________
+Attributes provide additional information about HTML elements.
+Attributes usually come in name/value pairs like: name="value"
+Attributes are always specified in the start tag
+The style attribute is used to specify the styling of an element, like color, font, size etc.
+Declaring a language is important for accessibility applications (screen readers) and search engines:
+<html lang="en-US">
+The first two letters specify the language (en). If there is a dialect, use two more letters (US).
+
+Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:
+<p title="I'm a tooltip">
+
+demands quotes for stricter document types like XHTML.
+Sometimes it is necessary to use quotes. This example will not display the title attribute correctly, because it contains a space:
+
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+<p title='John "ShotGun" Nelson'>
+Or vice versa:
+<p title="John 'ShotGun' Nelson">
+_______________________________________
+attribute	Description
+alt	Specifies an alternative text for an image, when the image cannot be displayed
+disabled	Specifies that an input element should be disabled
+href	Specifies the URL (web address) for a link
+id	Specifies a unique id for an element
+src	Specifies the URL (web address) for an image
+style	Specifies an inline CSS style for an element
+title	Specifies extra information about an element (displayed as a tool tip)
+_______________________________________________
+HTML Headings
+Headings are defined with the <h1> to <h6> tags.
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+__________________________
+HTML Horizontal Rules
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <hr> element is used to separate content (or define a change) in an HTML page:
+
+
+Tag	Description
+<html>	Defines the root of an HTML document
+<body>	Defines the document's body
+<head>	A container for all the head elements (title, scripts, styles, meta information, and more)
+<h1> to <h6>	Defines HTML headings
+<hr>	Defines a thematic change in the content
+_________________________________________________
+HTML Paragraphs
+The HTML <p> element defines a paragraph:
+HTML Display
+You cannot be sure how HTML will be displayed.
+Large or small screens, and resized windows will create different results.
+With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
+The browser will remove any extra spaces and extra lines when the page is displayed:
+
+HTML Line Breaks
+The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+_________________________________________________________________
+The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+<pre>
+  My Bonnie lies over the ocean.
+ in      this    poem  add spaces
+</pre>
+
+Tag	Description
+<p>	Defines a paragraph
+<br>	Inserts a single line break
+<pre>	Defines pre-formatted text
+____________________________________
+The HTML Style Attribute
+
+Setting the style of an HTML element, can be done with the style attribute.
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value.
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+<p style="font-family:courier;">This is a paragraph.</p>
+<p style="color:red;">This is a paragraph.</p>
+<body style="background-color:powderblue;">
+_______________________________________________
+HTML Formatting Elements
+
+Tag	Description
+<b>	Defines bold text
+<em>	Defines  extra importance emphasized text 
+<i>	Defines italic text
+<small>	Defines smaller text
+<strong>	Defines with added semantic "strong". important text
+<sub>	Defines subscripted text
+<sup>	Defines superscripted text
+<ins>	Defines inserted text
+<del>	Defines deleted del+ins text
+<mark>	Defines marked/highlighted text
+______________________________________
+HTML Quotation and Citation Elements
+
+Tag	Description
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+<abbr>	Defines an abbreviation or acronym
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<address>Defines contact information for the author/owner of a document
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<bdo>Defines the text direction
+The HTML <bdo> element defines bi-directional override.
+The <bdo> element is used to override the current text direction:
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">Defines a section that is quoted from another source
+The HTML <blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+
+<cite>Defines the title of a work and this is a tag not attribute
+The HTML <cite> element defines the title of a work.
+Browsers usually display <cite> elements in italic.
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<q>Defines a short inline quotation
+The HTML <q> element defines a short quotation.
+Browsers usually insert quotation marks around the <q> element.
+
+Tag	Description
+<abbr>	Defines an abbreviation or acronym
+<address>	Defines contact information for the author/owner of a document
+<bdo>	Defines the text direction
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work
+<q>	Defines a short inline quotation
+
+_____________________________________________________________
+Comment tags are used to insert comments in the HTML source code.
+<!-- Write your comments here -->
+___________________________________________________________
+HTML Colors
+HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values like rgb(255, 99, 71)
+#ff6347 hsl(9, 100%, 64%)
+Text ColorSame as color name "Tomato", but 50% transparent
+You can set the color of text:
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+Border Color
+You can set the color of borders:
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+_____________________________________________
+HTML Links -
+HTML links are hyperlinks.
+You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+In HTML, links are defined with the <a> tag
+<a href="url">link text</a>
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+Local Links
+A local link (link to the same web site) is specified with a relative URL (without https://www....).
+<a href="html_images.asp">HTML Images</a>
+
+HTML Link Colors
+<style>
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+Links are often styled as buttons, by using CSS:
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+HTML Links - The target Attribute
+The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+Image as Link
+Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).
+
+Link Titles
+The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+Create a Bookmark
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+Bookmarks can be useful if your webpage is very long.
+To make a bookmark, you must first create the bookmark, and then add a link to it.
+When the link is clicked, the page will scroll to the location with the bookmark.
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+
+External Paths
+External pages can be referenced with a full URL or with a path relative to the current web page.
+This example uses a full URL to link to a web page:
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+This example links to a page located in the html folder on the current web site:
+<a href="/html/default.asp">HTML tutorial</a>
+
+This example links to a page located in the same folder as the current page:
+<a href="default.asp">HTML tutorial</a>
+<a href="prince.jpg">click to see image</a>
+_________________________________
+An HTML table is defined with the <table> tag.
+
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+
+HTML Table - Adding Cell Padding
+Cell padding specifies the space between the cell content and its borders.
+If you do not specify a padding, the table cells will be displayed without padding.
+To set the padding, use the CSS padding property:
+Example
+th, td {
+  padding: 15px;
+}
+By default, table headings are bold and centered.
+To left-align the table headings, use the CSS text-align property:
+
+Border spacing specifies the space between the cells.
+To set the border spacing for a table, use the CSS border-spacing property:
+Example
+table {
+  border-spacing: 5px;
+}
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+</table>
+_______________________________-
+HTML Lists
+
+Unordered HTML List
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+<ul  style="list-style-type:disc;" >
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+Ordered HTML List
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+Control List Counting
+By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:
+
+<ol type="i" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+
+HTML Description Lists
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+Nested HTML Lists
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+Another A more complicated nested list.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h4>Lists inside a list:</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea
+        <ul>
+          <li>China</li>
+          <li>Africa</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+</body>
+</html>
+
+
+Horizontal List with CSS:-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>
+
+Definition and Usage
+The value attribute sets the value of a list item. The following list items will increment from that number.
+The value must be a number and can only be used in ordered lists (<ol>).
+
+<ol>
+  <li value="100">Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+  <li>Water</li>
+  <li>Juice</li>
+  <li>Beer</li>
+</ol>
+_____________________________________________
+HTML Block and Inline Elements
+Block-level Elements
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+Block level elements in HTML:
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+Inline Elements
+An inline element does not start on a new line and only takes up as much width as necessary.
+This is an inline <span> element inside a paragraph.
+Inline elements in HTML:
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+Tag	Description
+<div>	Defines a section in a document (block-level)
+<span>	Defines a section in a document (inline)
+__________________________________________
+HTML The class Attribute
+The HTML class attribute is used to define equal styles for elements with the same class name.
+So, all HTML elements with the same class attribute will have the same format and style.
+Select Elements With a Specific Class
+In CSS, to select elements with a specific class, write a period (.) character, followed by the name of the class:
+.city
+Multiple Classes
+HTML elements can have more than one class name, each class name must be separated by a space.
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+Different Tags Can Share Same Class
+Different tags, like <h2> and <p>, can have the same class name and thereby share the same style:
+
+Using The class Attribute in JavaScript:-
+The class name can also be used by JavaScript to perform certain tasks for elements with the specified class name.
+JavaScript can access elements with a specified class name by using the getElementsByClassName() method:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Using The class Attribute in JavaScript</h2>
+<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+<button onclick="myFunction()">Hide elements</button>
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+_______________________________________
+HTML The id Attribute
+The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).
+The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.
+In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:
+Difference Between Class and ID
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:
+
+First, create a bookmark with the id attribute:
+<h2 id="C4">Chapter 4</h2>
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+<a href="#C4">Jump to Chapter 4</a>
+Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:
+Example
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+Using The id Attribute in JavaScript
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+</body>
+</html>
+__________________________________
+HTML Iframes
+An iframe is used to display a web page within a web page.
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;height:200px;width:300px;"></iframe>
+border remove:-border:none;
+...................
+Iframe - Target for a Link
+An iframe can be used as the target frame for a link.
+The target attribute of the link must refer to the name attribute of the iframe:
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+..........................
+<iframe srcdoc="<p>Hello world!</p>" src="demo_iframe_srcdoc.htm"></iframe>If a browser does NOT support the srcdoc attribute, it will show the file specified in the src attribute instead (if present).
+The srcdoc attribute specifies the HTML content of the page to show in the inline frame.
+Tip: This attribute is expected to be used together with the sandbox and seamless attributes.
+If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present).
+
+
+An <iframe> with extra restrictions:
+<iframe src="demo_iframe_sandbox.htm" sandbox></iframe>
+
+Definition and Usage
+The sandbox attribute enables an extra set of restrictions for the content in the iframe.
+
+When the sandbox attribute is present, and it will:
+
+treat the content as being from a unique origin
+block form submission
+block script execution
+disable APIs
+prevent links from targeting other browsing contexts
+prevent content from using plugins (through <embed>, <object>, <applet>, or other)
+prevent the content to navigate its top-level browsing context
+block automatically triggered features (such as automatically playing a video or automatically focusing a form control)
+The value of the sandbox attribute can either be just sandbox (then all restrictions are applied), or a space-separated list of pre-defined values that will REMOVE the particular restrictions.
+
+
+Value	Description
+(no value)	Applies all restrictions
+allow-forms	Re-enables form submission
+allow-pointer-lock	Re-enables APIs
+allow-popups	Re-enables popups
+allow-same-origin	Allows the iframe content to be treated as being from the same origin
+allow-scripts	Re-enables scripts
+allow-top-navigation Allows the iframe content to navigate its top-level browsing context
+
+An <iframe> sandbox allowing form submission:
+<iframe src="demo_iframe_sandbox_form.htm" sandbox="allow-forms"></iframe>
+An <iframe> sandbox allowing scripts and access to server content:
+<iframe src="demo_iframe_sandbox_origin.htm" sandbox="allow-same-origin allow-scripts"></iframe>
+___________________________________________________
+
+HTML File Paths
+Path	Description
+<img src="picture.jpg">	                 picture.jpg is located in the same folder as the current page
+<img src="images/picture.jpg">	picture.jpg is located in the images folder in the current folder
+<img src="/images/picture.jpg">	picture.jpg is located in the images folder at the root of the current web
+<img src="../images/picture.jpg">	picture.jpg is located in the folder one level up from the current folder
+
+A file path describes the location of a file in a web site's folder structure.
+File paths are used when linking to external files like:
+Web pages
+Images
+Style sheets
+JavaScripts
+
+When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains. 
+_____________________________________________
+HTML Computer Code Elements
+
+The HTML <code> element defines a fragment of computer code.
+Notice that the <code> element does not preserve extra whitespace and line-breaks.
+To fix this, you can put the <code> element inside a <pre> element:
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+The HTML <kbd> element represents user input, like keyboard input or voice commands
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+The HTML <samp> element represents output from a program or computing system.
+Text surrounded by <samp> tags is typically displayed in the browser's default monospace font:
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+The HTML <var> element defines a variable.
+The variable could be a variable in a mathematical expression or a variable in programming context:
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+Einstein wrote: E = mc2.
+
+Tag	Description
+<code>	Defines programming code
+<kbd>	Defines keyboard input 
+<samp>	Defines computer output
+<var>	Defines a variable
+<pre>	Defines preformatted text
+____________________________________________
+
+HTML5 defines eight new semantic elements. All these are block-level elements.
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+Thankfully, Sjoerd Visscher created the HTML5Shiv! The HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9.
+You will require the HTML5shiv to provide compatibility for IE Browsers older than IE 9.
+ <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+
+
+   Tag	        Description
+<article>	Defines an article in a document
+<aside>	Defines content aside from the page content
+<bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
+<details>	Defines additional details that the user can view or hide
+<dialog>	Defines a dialog box or window
+<figcaption>      Defines a caption for a <figure> element
+<figure>	Defines self-contained content
+<footer>	Defines a footer for a document or section
+<header>	Defines a header for a document or section
+<main>	Defines the main content of a document
+<mark>	Defines marked/highlighted text
+<meter>	Defines a scalar measurement within a known range (a gauge)
+<nav>	Defines navigation links
+<progress>	Represents the progress of a task
+<rp>	Defines what to show in browsers that do not support ruby annotations
+<rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
+<ruby>	Defines a ruby annotation (for East Asian typography)
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+<wbr>	Defines a possible line-break
+.....................................
+The <details open> tag specifies additional details that the user can view or hide on demand
+<details>
+  <summary>Copyright 1999-2018.</summary>
+<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+The <dialog> element makes it easy to create popup dialog and modals on a web page.
+ <dialog open>This is an open dialog window</dialog>
+
+Use a <figure> element to mark up a photo in a document.
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+Note:alt attribute must required
+
+The <footer> tag defines a footer for a document or section.
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+Tip: Contact information inside a <footer> element should go inside an <address> tag.
+
+<footer>
+  <p>Posted by: Hege Refsnes</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+
+The <header> element represents a container for introductory content or a set of navigational links.
+A <header> element typically contains:
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+You can have several <header> elements in one document.
+Note: A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+
+<article>
+  <header>
+    <h1>Most important heading here</h1>
+    <h3>Less important heading here</h3>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+
+
+The <main> tag specifies the main content of a document.
+The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+
+<main>
+  <h1>Web Browsers</h1>
+  <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+  <article>
+    <h1>Google Chrome</h1>
+    <p>Google Chrome is a free, open-source web browser developed by Google,
+    released in 2008.</p>
+  </article>
+</main>
+
+
+Use the <mark> tag if you want to highlight parts of your text.
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+Examples: Disk usage, the relevance of a query result, etc.
+Note: The <meter> tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <progress> tag.
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+<meter value="0.6">60%</meter>
+<meter min="0" low="40" high="90" max="100" value="30"></meter>
+<meter value="0.3" high="0.9" low="0.1" optimum="0.5"></meter>
+
+
+The <progress> tag represents the progress of a task.
+Tip: Use the <progress> tag in conjunction with JavaScript to display the progress of a task.
+Note: The <progress> tag is not suitable for representing a gauge (e.g. disk space usage or relevance of a query result). To represent a gauge, use the <meter> tag instead.
+Downloading progress:<progress value="22" max="100"></progress>
+
+The <nav> tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+
+The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
+Tip: When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <wbr> element to add word break opportunities. for use long word
+
+The <time> tag defines a human-readable date/time.
+This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+Dates:
+<time datetime="1914">  <!-- means the year 1914 -->
+<time datetime="1914-12">  <!-- means December 1914 -->
+<time datetime="1914-12-20">  <!-- means 20 December 1914 -->
+<time datetime="12-20">  <!-- means 20 December any year -->
+<time datetime="1914-W15">  <!-- means week 15 of year 1914 -->
+
+Date and Times:
+<time datetime="1914-12-20T08:00">  <!-- means 20 December 1914 at 8am -->
+<time datetime="1914-12-20 08:00">  <!-- also means 20 December 1914 at 8am -->
+<time datetime="1914-12-20 08:30:45">  <!-- with minutes and seconds -->
+<time datetime="1914-12-20 08:30:45.687">  <!-- with minutes, seconds, and milliseconds -->
+
+Times:
+<time datetime="08:00">  <!-- means 8am -->
+<time datetime="08:00-03:00">  <!-- means 8am in Rio de Janeiro (UTC-3 hours)  -->
+<time datetime="08:00+03:00">  <!-- means 8am in Madagascar (UTC+3 hours)  -->
+
+Durations:
+<time datetime="P2D">  <!-- means a duration of 2 days -->
+<time datetime="PT15H10M">  <!-- means a duration of 15 hours and 10 minutes -->
+
+Value	Description
+YYYY-MM-DDThh:mm:ssTZD
+or
+PTDHMS	The date or time being specified. Explanation of components:
+YYYY - year (e.g. 2011)
+MM - month (e.g. 01 for January)
+DD - day of the month (e.g. 08)
+T or a space - a separator (required if time is also specified)
+hh - hour (e.g. 22 for 10.00pm)
+mm - minutes (e.g. 55)
+ss - seconds (e.g. 03)
+TZD - Time Zone Designator (Z denotes Zulu, also known as Greenwich Mean Time)
+P - a prefix for "Period"
+D - a prefix for "Days"
+H - a prefix for "Hours"
+M - a prefix for "Minutes"
+S - a prefix for "Seconds"
+
+
+The <rp> tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations.
+Use the <rp> tag together with the <ruby> and the <rt> tags: The <ruby> element consists of one or more characters that needs an explanation/pronunciation, and an <rt> element that gives that information, and an optional <rp> element that defines what to show for browsers that not support ruby annotations.
+__________________________________________________________
+The position property specifies the type of positioning method used for an element.
+There are five different position values:
+static
+relative
+fixed
+absolute
+sticky
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+position: static;
+HTML elements are positioned static by default.
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+position: relative;
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+A fixed element does not leave a gap in the page where it would normally have been located.
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+Note: A "positioned" element is one whose position is anything except static.
+
+position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+An element can have a positive or negative stack order:
+
+All CSS Positioning Properties
+Property	Description
+bottom	Sets the bottom margin edge for a positioned box
+clip	Clips an absolutely positioned element
+left	Sets the left margin edge for a positioned box
+position	Specifies the type of positioning for an element
+right	Sets the right margin edge for a positioned box
+top	Sets the top margin edge for a positioned box
+z-index	Sets the stack order of an element
+___________________________________________________
+CSS Layout - float and clear
+
+
+
+
+
+
+
+
+
+
+
+

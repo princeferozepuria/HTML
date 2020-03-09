@@ -1,0 +1,192 @@
+HTML NOTES,TIPS AND RULES:-
+HTML stands for Hyper Text Markup Language
+HTML describes the structure of Web pages using markup
+HTML elements are the building blocks of HTML pages
+HTML elements are represented by tags
+HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+Browsers do not display the HTML tags, but use them to render the content of the page
+
+All HTML elements can have attributes
+The title attribute provides additional "tool-tip" information
+The href attribute provides address information for links
+The width and height attributes provide size information for images
+The alt attribute provides text for screen readers
+At W3Schools we always use lowercase attribute names
+At W3Schools we always quote attribute values with double quotes
+
+HTML tags normally come in pairs like <p> and </p>
+The first tag in a pair is the start tag, the second tag is the end tag
+The end tag is written like the start tag, but with a forward slash inserted before the tag name
+
+Tip: The start tag is also called the opening tag, and the end tag the closing tag.
+Note: Only the content inside the <body> section (the white area above) is displayed in a browser.
+Tip:HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <br> element (which indicates a line break).
+Tip:we always use lowercase tags.
+Tip:we always use lowercase attribute names
+Note:The alt attribute is also useful if the image does not exist:
+Note:Using quotes are the most common. Omitting quotes can produce errors. 
+we always use quotes around attribute values.
+
+All HTML elements can have attributes
+The title attribute provides additional "tool-tip" information
+The href attribute provides address information for links
+The width and height attributes provide size information for images
+The alt attribute provides text for screen readers
+we always use lowercase attribute names
+we always quote attribute values with double quotes
+
+Note: Browsers automatically add some white space (a margin) before and after a heading.
+Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+Note: Metadata typically define the document title, character set, styles, links, scripts, and other meta information.
+Note: Browsers automatically add some white space (a margin) before and after a paragraph.
+Note: Dropping the end tag can produce unexpected results or errors.
+
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+Note: Browsers display <strong> as <b>, and <em> as <i>. However, there is a difference in the meaning of these tags: <b> and <i> defines bold and italic text, but <strong> and <em> means that the text is "important".
+
+Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+Note: A link does not have to be text. It can be an image or any other HTML element.
+Note: Without a forward slash at the end of subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the end of the address, and then create a new request.
+Tip: If your webpage is locked in a frame, you can use target="_top" to break out of the frame:
+Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+Note: The <td> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+Remember to define borders for both the table and the table cells.
+Note: If the table has collapsed borders, border-spacing has no effect.
+Note: The <caption> tag must be inserted immediately after the <table> tag.
+
+Use the HTML <table> element to define a table
+Use the HTML <tr> element to define a table row
+Use the HTML <td> element to define a table data
+Use the HTML <th> element to define a table heading
+Use the HTML <caption> element to define a table caption
+Use the CSS border property to define a border
+Use the CSS border-collapse property to collapse cell borders
+Use the CSS padding property to add padding to cells
+Use the CSS text-align property to align cell text
+Use the CSS border-spacing property to set the spacing between cells
+Use the colspan attribute to make a cell span many columns
+Use the rowspan attribute to make a cell span many rows
+Use the id attribute to uniquely define one table
+
+
+Note: List items can contain new list, and other HTML elements, like images and links, etc.
+
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <ol> element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML <li> element to define a list item
+Use the HTML <dl> element to define a description list
+Use the HTML <dt> element to define the description term
+Use the HTML <dd> element to describe the term in a description list
+Lists can be nested inside lists
+List items can contain other HTML elements
+Use the CSS property float:left or display:inline to display a list horizontally
+
+The <div> element is a block-level element.
+
+Tip: The class attribute can be used on any HTML element.
+Note: The class name is case sensitive!
+Tip: The id attribute can be used on any HTML element.
+Note: The id value is case-sensitive.
+Note:Difference Between Class and ID
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:
+
+Tips and Notes
+Tip: To deal with browsers that do not support <iframe>, add a text between the opening <iframe> tag and the closing </iframe> tag.
+Tip: Use CSS to style the <iframe> (even to include scrollbars).
+
+Tips and Notes
+Note: If the "src" attribute is present, the <script> element must be empty.
+Tip: Also look at the <noscript> element for users that have disabled scripts in their browser, or have a browser that doesn't support client-side scripting.
+Note: There are several ways an external script can be executed:
+If async="async": The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)
+If async is not present and defer="defer": The script is executed when the page has finished parsing
+If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page
+
+Tips and Notes
+Note: If the <base> tag is present, it must have either an href attribute or a target attribute, or both.
+Note: The <link> element is an empty element, it contains attributes only.
+Note: This element goes only in the head section, but it can appear any number of times.
+Note:-In XHTML the <link> tag must be properly closed.
+
+
+Advantage of using an entity name: An entity name is easy to remember.
+Disadvantage of using an entity name: Browsers may not support all entity names, but the support for numbers is good.
+Note: Entity names are case sensitive.
+
+URL Encoding
+URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.
+URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.
+URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.
+
+Notes on GET:
+Appends form-data into the URL in name/value pairs
+The length of a URL is limited (about 3000 characters)
+Never use GET to send sensitive data! (will be visible in the URL)
+Useful for form submissions where a user wants to bookmark the result
+GET is better for non-secure data, like query strings in Google
+
+Notes on POST:
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked
+Note:Each input field must have a name attribute to be submitted.
+If the name attribute is omitted, the data of that input field will not be sent at all.
+
+Note: The <option> tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server.
+Tip: If you have a long list of options, you can group related options with the <optgroup> tag.
+Use <input> to create buttons in an HTML form.
+
+Tip: Contact information inside a <footer> element should go inside an <address> tag.
+Note: A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+Note: The <meter> tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <progress> tag.
+Tip: Use the <progress> tag in conjunction with JavaScript to display the progress of a task.
+Note: The <progress> tag is not suitable for representing a gauge (e.g. disk space usage or relevance of a query result). To represent a gauge, use the <meter> tag instead.
+
+
+Note:-only MP4, WebM, and Ogg video are supported by the HTML5 standard.
+Note:Different extensions like: .swf, .wav, .mp3, .mp4, .mpg, .wmv, and .avi.
+Note:Only MP3, WAV, and Ogg audio are supported by the HTML5 standard.
+Note: YouTube <object> and <embed> were deprecated from January 2015. You should migrate your videos to use <iframe> instead.
+
+The id attribute cannot be used with: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>.
+The class attribute cannot be used with: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>.
+The style attribute cannot be used with: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>.
+The tabindex attribute can be used with: <a>, <area>, <button>, <input>, <object>, <select>, and <textarea>.
+The title attribute cannot be used with: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>.
+
+
+
+
+
+
+
+

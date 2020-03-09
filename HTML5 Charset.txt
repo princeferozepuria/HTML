@@ -1,0 +1,8 @@
+For HTML5:-
+<meta charset="UTF-8">
+
+The @charset CSS Rul:-
+@charset "UTF-8";
+
+symbol hexadecimal code uses
+USE CSS:-<span style='font-size:100px;'>&#8765;</span> 

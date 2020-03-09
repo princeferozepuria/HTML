@@ -1,0 +1,578 @@
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html en="us">root element  HTML page</html>
+DIVISION TAG
+<div> div tag define a division or  in an html document article,navigation,slider,header,footer container</div>
+_________________________________________
+<head>=metadata: <title>, <style>, <meta>, <link>, <script>,  <noscript>and <base>.
+<head>unvisible content</head
+<title>Page Title</title>
+<style> properties:values;</style>
+........................................
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+<noscript>Sorry!your browser does not support javascript</noscript>
+
+async=A script that will be run asynchronously as soon as it is available:
+defer=A script that will not run until after the page has loaded:
+
+An external JavaScript with an UTF-8 character set:
+<script src="myscripts.js" charset="UTF-8"></script>
+.......................................
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="source files">
+<meta name="keyword" content="home,audio,video,images,tables,forms,login">
+<meta name="author" content="prince">
+<!--<meta name="http-equiv" refresh content="5"; url="http://google.com">--redirect to url>
+ in 5 seconds
+...............................................
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+...............................................
+<base target="_blank"> define in head section
+Thankfully, Sjoerd Visscher created the HTML5Shiv
+ <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+___________________________________________
+HTML TABLE HEADING:-
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+______________________
+Horizontal rule<hr/> Tag
+Line break<br/> tag
+Word Break Opportunity <wbr/>
+______________________
+HTML PARAGRAPHS:-
+<p> Browsers automatically add some white space (a margin) before and after a paragraph.</p>
+<pre> include spaces and enters:application/poems write</pre>
+include spaces and enters like:application writing
+______________________
+HTML Text Formatting Elements
+Tag	Description
+<b>	Defines bold text  </b>
+<em>	Defines emphasized text </em> 
+<i>	Defines italic text </i>
+<small>	Defines smaller text  </small>
+<strong>	Defines important text  </strong>
+<sub>	Defines subscripted text  </sub>
+<sup>	Defines superscripted text  </sup>
+<ins>	Defines inserted text  </ins>
+<del>	Defines deleted text  </del>
+<mark>	Defines marked/highlighted text  </mark>
+...........COMPUTER TAGS/MATHMATICS CALCULATIONS............
+<code>	 x=2; y=8; z=x+y; </code>
+<samp>	sample output  Error! </samp>
+<kbd>	save as Ctrl + S</kbd>
+<var>       E</var> = <var>mc</var><sup>2</sup>
+<pre>     <code>x = 5;y = 6;include spaces</code></pre>
+____________________________
+HTML QUOTATION AND CITATION ELEMENT:-
+<q>,<blockquote>,<dfn>,<abbr>,<cite>,<bdo> <address>
+
+<q cite="http://www.wwf.org">Build a future blah blah</q>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">quoted from another source.</blockquote>
+The <abbr title="World Health Organization">WHO</abbr> pop up show full form
+<dfn title="prince ferozepuria">show full form</dfn> recomended
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.title of a work.</p>
+<bdo dir="rtl">text right to left</bdo>
+<address> Box 564, Disneyland<br>USA</address>
+_____________________________
+HTML Links
+The target Attributes list:-eg target="_blank"
+  Value	     Description
+_blank	 Opens the link in a new window or tab
+_self	 Default. Opens the link in the same frame as it was clicked
+_parent	 Opens the link in the parent frame
+_top	 Opens the link in the full body of the window
+framename	Opens the link in a named frame
+Others attributes:-
+<a charset="UTF-8" href="https://www.w3schools.com">language charset</a>
+<a href="https://princeferozepuria.com" type="text/html">go to site</a>
+<a href="/images/myw3schoolsimage.jpg" download>download here</a>
+<a href="https://www.w3schools.com" hreflang="en">language selection</a>
+That'sit
+<a href="https://www.w3schools.com/html/">go to html section at same page</a>
+<a href="https://www.w3schools.com/" target="_blank">link open another tab</a>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">title pop up show</a>
+
+CREATE CLICKABLE IMAGE LINK:-
+An image as a link: <a href="https://www.w3schools.com">
+<img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
+</a>
+
+CREATE EMAIL LINK:-
+<a href="mailto:navi5ivestar@gmail.com" target="_top">Send Mail</a>
+
+CREATE PHONE LINK:-
+<span>
+contact us
+<a href="tel:+4733378901">+47 333 78 901</a>
+<span>
+
+PAGE GO TO TOP OR DOWN/OR CHAPTER:-
+<h2 id="top"><a href="#bottom">Go to bottom of page</a></h2>
+<p> blah blah blaahh</p>
+<a href="#top" id="bottom">go to top of page</a>
+
+Link to a JavaScript
+<a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+__________________________________________
+HTML TABLE:-
+Attribute the colspan="2" attribute to make a cell span many columns
+Use the rowspan="3" attribute to make a cell span many rows
+colspan="2"<!--2 columns ki width 1 column mein maintain krni ho toh colspan horizontal-->
+rowspan="3"<!--3 row ki height 1 column mein arrange karna vertical-->
+
+Tag	   Description
+<table>       Defines a table    <table>
+<th >           Defines a header cell in a table   <th>	
+<tr>             Defines a row in a table   <tr>
+<td>	   Defines a cell in a table   <td>	
+<caption>   Defines a table caption   <caption> 
+<colgroup> Specifies a group of one or more columns in a table for formatting    <colgroup> 
+<col>           Specifies column properties for each column within a <colgroup> element   <col>
+<thead>	   Groups the header content in a table   <thead>
+<tbody>	   Groups the body content in a table   <tbody>
+<tfoot>	   Groups the footer content in a table    <tfoot>	
+
+<colgroup> select columns for color </colgroup>
+<col span="1" style="background-color:pink;">
+/*specifies the number of columns a <col> element should span*/
+
+<table>main table tag</table>
+Attributes:-width="400"
+height="200"
+border="1pixel"
+border color="red"
+bgcolor="pink"
+background="a.jpg"
+cell spacing="5"
+____________________________________
+LISTS
+<ul  style="list-style-type:disc;" >circle,square,none,.png image
+<li>unordered list</li>
+</ul>
+
+<ol type="i" start="50">
+<li> ordered list</li>
+<li value="12"> nested </li>
+</ol>
+
+Description Lists:-
+<dl>
+<dt> prince (term)</dt>
+<dd> he is a programmer(definition)</dd>
+</dl>
+_____________________________
+HTML IFRAMES
+<iframe src="demo_iframe.htm" style="border:2px solid red;height:200px;width:300px;"></iframe>
+border remove:-border:none;
+
+TARGET ATTRIBUTE:-
+<a href="login.html" title="go to file" target="web">get it</a>
+<iframe name="web" height="400px" width="80%" ></iframe>
+
+SRCDOC ATTRIBUTE:-
+<iframe srcdoc="<p>Hello world!</p>" src="demo_iframe_srcdoc.htm"></iframe>
+
+AN <iframe> WITH EXTRA RESTRICTIONS:
+<iframe src="demo_iframe_sandbox.htm" sandbox></iframe>
+
+An <iframe> sandbox allowing form submission:
+<iframe src="demo_iframe_sandbox_form.htm" sandbox="allow-forms"></iframe>
+
+An <iframe> sandbox allowing scripts and access to server content:
+<iframe src="demo_iframe_sandbox_origin.htm" sandbox="allow-same-origin allow-scripts"></iframe>
+
+Value	                        Description
+sandbox      	  Applies all restrictions
+allow-forms	  Re-enables form submission
+allow-pointer-lock     Re-enables APIs
+allow-popups	  Re-enables popups
+allow-same-origin	  Allows the iframe content to be treated as being from the same origin
+allow-scripts	  Re-enables scripts
+allow-top-navigation  Allows the iframe content to navigate its top-level browsing context
+__________________________________________
+HTML FORM TAG:-
+<form> form releted data </form>
+Attribute           	Value
+action=	                "/action_page.php"	<!--send data to server and when form submitted process-->
+method=                 "get/post"         <!--post method is secure-->
+autocomplete=	"on/off"           <!--words complete automatic-->
+novalidate=             "novalidate"
+enctype=                    "application/x-www-form-urlencoded
+enctype=                    "multipart/form-data"
+enctype=                      "text/plain"
+target=	                  "_blank"or "_self"or "_parent"or " _top"	
+name=                        "login-form or inquiry or educational"
+
+<form id="myform">first form id
+<input type="text'' name="last name" form="my form">link  outside input field to form
+<input type="submit" value="sumbit to another server" form action="server2.php"> connect submit data to other server
+__________________________________________________________
+Use button form input element if you create button in a form. IN FORMS
+<input type="submit" value="login as">value means button ka name
+<input type="reset" value="reset"> reset  form data
+..................................................................
+Use button tag if you want to create button for an action.
+<button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+<button type="button" name="prince" onclick="alert('my name is prince')">prince</button>/*alert dene k liye*/
+access key="r" /* button ko shortcut dene k liye works alt+r or shift+r*/
+
+Attribute   	Value	                         
+autofocus	autofocus	
+disabled	                disabled	                              
+form	                   form_id	                          
+formaction	   /action_page.php"	                             
+formenctype	   application/x-www-form-urlencoded or multipart/form-data or text/plain    
+formmethod	      get/post                                           
+formnovalidate	  formnovalidate                          
+formtarget	_blank or _self or _top or _parent or framename
+name	                 freebutton	      Specifies a name for the button
+type	               button/reset/submit           Specifies the type of button
+value	              click me	     Specifies an initial value for the button
+____________________________________________________
+HTML  TEXTAREA
+<textarea> your home town address </textarea>
+<text area cols="30" rows="5" > <!-- cols mean width and row means height--></text area> 
+
+Attribute	         Value	                                                     
+autofocus="autofocus"	
+cols="100"
+rows="5"    	                            
+disabled="disabled"	                       
+maxlength="10"	                           
+placeholder="text"	      
+readonly="readonly"	                                
+required="required"	                              
+dirname="textareaname.dir"               	       
+wrap="hard/soft"	              
+name="text"	
+form="form_id"	link  outside input field to form
+_________________________________
+FIELD SET BOX
+<fieldset>
+<legend>login us</legend>
+inside user name and password box
+</fieldset>
+
+Attribute	Value	
+disabled	disabled	
+form	form_id	
+name	text	
+_____________________________________________
+HTML <label> Tag
+label for a <button>, <input>, <meter>, <output>, <progress>, <select>, or <textarea> element.
+
+eg: <label for="male">Male</label>  /*ab male pe cursor lekar jayegy toh waha se bhi select hone lagega*/
+<input type="radio" name="gender" id="male" value="male"><br>
+<label for="male" form="form1">Male</label> outside form label
+____________________________________________
+DROPDOWN LIST
+<select name="city">city  <!-- is list ko city ke liye bna rahe hain--> 
+<option value="ferozepur">ferozepur</option>
+<option value="bathinda">bathinda</option>
+<option value="ferozepur cantt">ferozepur cantt</option>
+</select>
+
+SELECT TAG:-attributes
+Attribute	       Value	           
+autofocus   autofocus      
+disabled	    disabled	       
+form	    form_id	         
+multiple	    multiple              
+name	    name	          
+required	    required                  	
+size	       5    how many option to visible     
+
+OPTION TAG:-attributes
+disabled	disabled	
+label	text	
+selected	selected	
+value	bathinda this value send to server	
+.........................................................
+ANOTHER EXAMPLE:-optgroup
+<select>
+  <optgroup label="Swedish Cars">                        <!--Specifies a label for an option-group-->
+    <option value="volvo">Volvo</option>             <!--must use value attribute indicates  to the server-->
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars" disabled=''disabled">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+______________________________________________
+HTML DATALIST  TAG
+
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+________________________________________________
+ <output> tag represents the result of a calculation (like one performed by a script)
+<body>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100+
+<input type="number" id="b" value="50">=
+<output name="x" for="a b"></output>
+</form>
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+</body>
+Attribute	     Value	                   
+for	element_id	
+form	form_id               
+name	name	            
+___________________________________________
+HTML INPUT TYPES:-USER NAME PASSWORD/FISRT NAME
+
+<input type="text" name="firstname">First name<br>
+<input type="text" name="lastname">Last name
+<input type="text" name="username">username
+<input type="password" name="password">password
+
+EMAIL PHONE NUMBERS
+<input type="email" name="email address">email address
+<input name="moblie" type="text" title="10 digit moblie number"/>
+<input type="number" name="book_tickets" min="1" max="5">
+<input type="number" name="points" min="0" max="100" step="10" value="30"> select 10 to 100 values
+
+FILE UPLOAD
+<input type="file"  name="myFile"  accept=".jpg">Only jpg.format
+<input type="file" accept="image/*,video/*,audio/*">Custom+all files
+<input type="file" name="upload any type of files">Uplaod all files
+
+
+BUTTONS
+(mostly used with a JavaScript to activate a script)
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<input type="submit" value="admit now">if details are correct to admit
+<input type="submit" value="login as">value means button ka name
+<input type="reset" value="reset">
+
+DATE AND TIME:-
+<input type="date" name="date of birth">date of birth
+<input type="time" name="select time" max="1979-12-31" min="2000-01-02">select time
+<input type="datetime-local" name="date with time select">date with time select
+<input type="month" name="select month">select month
+<input type="week" name="select week">select week or week_year
+
+
+RADIO BUTTON 
+<input type="radio" name="gender" value="male" checked>male  <!--yaha pe name means kis catagory se hai-->
+<input type="radio" name="gender" value="female">female <!-- yeh user ko dekhai dega
+
+CHECKBOX 
+<input type="checkbox" name="select courses" value="web design">web design
+<input type="checkbox" name="select courses" value="bootstrap">bootstrap
+<input type="checkbox" name="accept" value="please check all details are correct">please check all details are correct
+<input type="checkbox" name="remember me">!checkbox
+
+URL/SEARCH BAR/RANGE/COLOR
+<input type="range" name="points" min="0" max="10" step="5">
+<input type="search" name="googlesearch">
+<input type="url" name="add_webpage">
+<input type="color" name="uicolor">ui color
+......................................................................
+INPUT ATTRIBUTES LIST:-
+
+<input type="text"> which type of box 
+
+<input name="name"> for whom this box
+
+<input type="text" name="firstname" value="John">
+
+<input size="23"> input box size 
+
+<input required="required">filed empty warning
+
+<input placeholder="eg.prince here">help for filling hints
+
+<input type="email" name="email" autocomplete="off">
+
+First name:<input type="text" name="fname" autofocus>
+
+Last name: <input type="text" name="lname" form="form1">access outside form
+
+<input type="submit" formaction="/action_page2.php"
+  value="Submit as admin">
+
+<input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+
+<input type="submit" formmethod="post" value="Submit using POST">
+
+<input type="submit" formnovalidate value="Submit without validation">
+
+<input type="submit" formtarget="_blank" value="Submit to a new window">
+
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> by default submit value
+
+<input type="number" name="quantity" min="1" max="5">
+
+<input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+
+First name: <input type="text" name="fname" dirname="fname.dir">
+
+Last name: <input type="text" name="lname" disabled><br> 
+
+<input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+
+<input checked="checked"> used in checkbox
+
+<input disabled="disabled">
+
+<input maxlength="10">maximum allowed length
+
+<input type="file" name="img" multiple> multiple file selected
+
+<input readonly="readonly" value="this is read only">
+
+<input type="number" step="5">5,10,15,20,25
+
+autocomplete   
+autofocus    
+placeholder   
+required 
+multiple    /multiple file selected/
+maxlength
+
+form="form1"  /*form id*/
+formaction
+formenctype
+formmethod
+formnovalidate  
+formtarget  
+
+height and width
+list
+min and max
+pattern (regexp)
+step
+
+________________________________
+
+DETAILS AND SUMMARY:-
+<details>
+<summary>computer <!--text hiding with arrow symbol-->
+</summary>
+<p>computer is an electronic device</p></details>
+
+DIALOG TAG	
+<dialog open style="background-color:red; opacity:.9;border-radius:5px;">prince ferozepuria pop up shows</dialog>
+
+FOOTER TAG 
+<footer> webpage about us /authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+Tip: Contact information inside a <footer> element should go inside an <address> tag.  </footer>
+
+HEADER TAG:-
+<header>	Defines a header for a document or section
+</header>
+<h1> - <h6>
+logo or icon
+authorship information</header>
+
+ARTICLE TAG:-
+<article>Forum post/Blog post/News story/Comment</article>
+<article>
+  <header>
+    <h1>Most important heading here</h1>
+    <h3>Less important heading here</h3>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+
+ASIDE TAG:-
+<p>these are electronics devices</p>
+<aside></p>laptop+android</p></aside>/*page highlights shows/sidebars*/
+
+MAIN TAG:-
+The <main> tag specifies the main content of a document.
+
+HIGHLIGHT TEXT:-
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+METER AND PROGRESS:-
+Temperature:-<meter value="17" min="5" max="100" low="20" high="80">  </meter>
+Disk usage:-<meter value="0.6">60%</meter>
+Scalar measurement:-<meter min="0" low="40" high="90" max="100" value="30"></meter>
+Fractional value:-<meter value="0.3" high="0.9" low="0.1" optimum="0.5"></meter>
+
+Downloading progress:<progress value="22" max="100"></progress>
+
+NAVIGATION TAG:-
+<nav> website navigator for create menu</nav>
+
+SECTION TAG:-
+<section>important document section and full information content of website  </section>
+
+TIME TAG:-
+<p><time datetime="2008-02-14 20:00">Valentines day</time></p>
+
+Dates:
+<time datetime="1914">  <!-- means the year 1914 -->
+<time datetime="1914-12">  <!-- means December 1914 -->
+<time datetime="1914-12-20">  <!-- means 20 December 1914 -->
+<time datetime="12-20">  <!-- means 20 December any year -->
+<time datetime="1914-W15">  <!-- means week 15 of year 1914 -->
+
+Date and Times:
+<time datetime="1914-12-20T08:00">  <!-- means 20 December 1914 at 8am -->
+<time datetime="1914-12-20 08:00">  <!-- also means 20 December 1914 at 8am -->
+<time datetime="1914-12-20 08:30:45">  <!-- with minutes and seconds -->
+<time datetime="1914-12-20 08:30:45.687">  <!-- with minutes, seconds, and milliseconds -->
+
+Times:
+<time datetime="08:00">  <!-- means 8am -->
+<time datetime="08:00-03:00">  <!-- means 8am in Rio de Janeiro (UTC-3 hours)  -->
+<time datetime="08:00+03:00">  <!-- means 8am in Madagascar (UTC+3 hours)  -->
+
+Durations:
+<time datetime="P2D">  <!-- means a duration of 2 days -->
+<time datetime="PT15H10M">  <!-- means a duration of 15 hours and 10 minutes -->
+
+RUBY RB RT TAG:-
+<ruby>container </ruby>
+<rb>ruby base </rb>
+<rt>ruby terms</rt>
+eg:my name is <ruby> <rb> pf</rb> <rt> prince ferozepuria</rt></ruby>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

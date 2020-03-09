@@ -1,0 +1,196 @@
+The <source> tag is used <video>, <audio>, and <picture>.
+<source src="horse.mp3" type="audio/mpeg"/>
+<source src="movie.mp4" type="video/mp4"/>
+<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+..........................................................................
+HTML <video> Tag
+autoplay="autoplay"
+controls="controls"
+loop="loop"
+muted="muted"
+poster="flower.jpg"
+preload="auto|metadata|none"
+src="videoname.mp4"
+width="500px"
+height="500px" height not recomended
+.................................................................
+TRACK TAG:-
+The <track> tag specifies text tracks for media elements (<audio> and <video>).
+This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
+
+<track default="default" />.
+
+<track src="subtitles_en.vtt" kind="subtitles" srclang="en">
+kind attributes values:-subtitles/captions/chapters/descriptions/metadata/
+
+The title of the text track is used by the browser when listing available text tracks.
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+..........................................................
+AUDIO TAG:-
+<audio>online play music or</audio>Attributes
+src="prince.mpeg"
+controls="controls"
+autoplay="autoplay"
+muted="muted"
+loop="loop"
+preload="auto/metadata/none"
+
+MP3	audio/mpeg
+OGG	audio/ogg
+WAV	audio/wav
+
+An absolute URL - points to another web site (like src="http://www.example.com/horse.ogg")
+A relative URL - points to a file within a web site (like src="horse.ogg")
+___________________________________
+HTML Plug-ins:-
+Plug-ins can be added to web pages with the <object> tag or the <embed> tag. 
+Plug-ins can be used for many purposes: display maps, scan for viruses, verify your bank id, etc.
+............................................................................
+EMBED TAG:-
+<embed/> this is empty tag and shows automatic controls 
+<embed type="application.pdf" src="book.pdf" width="300px"
+height="250px"></embed>
+
+Attributes:-
+type="application.pdf"
+src="book.pdf"
+width="300px"
+height="250px"
+.....................................................................................
+OBJECT TAG:-
+<object>add document,pdf/ PDF readers Java applets,active x,and  Flash Players,txt files</object>like,,
+<object data="application/vnd.adobe.flash-movie" width=''400px" height="400" data="helloworld.swf">
+Attributes:-
+type="helloworld.swf"
+data="application/vnd.adobe.flash-movie"
+width="300px"
+height="250px"
+form="form1
+ANOTHER EXAMPLE:-
+<object data="horse.wav''>
+<param name="autoplay" value="true">
+</object>
+
+___________________________________________
+HTML IMAGES:- FILE PATHS:-
+            Path	                                                                          Description
+<img src="picture.jpg">	                 picture.jpg is located in the same folder as the current page
+<img src="images/picture.jpg">	picture.jpg is located in the images folder in the current folder
+<img src="/images/picture.jpg">	picture.jpg is located in the images folder at the root of the current web
+<img src="../images/picture.jpg">	picture.jpg is located in the folder one level up from the current folder
+
+IMAGES IN ANOTHER FOLDER:- allows Animated Images
+<img src="/images/img_girl.gif" alt="Girl in a jacket" style="width:100%;height:600px;">
+
+IMAGES ON ANOTHER SERVER
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+BACKGROUND AREA:-
+<p style="background-image:url('clouds.jpg');">this is paragraph</p>
+
+The PICTURE ELEMENT:-
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+<figure>specifies self contained like illusrations,diagrams,photos,code,listings etc.</figure>
+<figcaption>define caption for figure like image and image name</figcaption>
+
+IMAGE-MAP IS AN IMAGE WITH CLICKABLE AREA:-
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"/>
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"/>
+</map>
+Attributes area tag:-
+alt="image"
+shape="rect" circle poly
+coords="0,0,182,126"
+download="murcury"
+herf="url or txt file or gif file"
+hreflang="en"
+media="screen and (min-color-index:256)"
+rel="alternate"
+target="_blank"
+type="image/gif"
+title="this is blah blah"
+___________________________________________
+<iframe height="400" width="400" src="you tube url">add playlist you tube urls supports<iframe>
+<iframe width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY? autoplay=1" loop="1" controls="1">
+</iframe>
+
+Value 0 (default):will not play automatically when the player loads.
+Value 1: play automatically when the player loads.
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+Value 0 (default): will play only once.
+Value 1:video will loop (forever).
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+Value 0: controls does not display.
+Value 1 (default): controls display.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
